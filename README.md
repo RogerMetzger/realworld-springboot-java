@@ -1,9 +1,9 @@
 
 ![RealWorld example apps cover](./doc/image/realworld-cover.png)
-[![Build](https://github.com/raeperd/realworld-springboot-java/actions/workflows/build.yml/badge.svg)](https://github.com/raeperd/realworld-springboot-java/actions/workflows/build.yml)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=raeperd_realworld-springboot-java&metric=ncloc)](https://sonarcloud.io/dashboard?id=raeperd_realworld-springboot-java)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=raeperd_realworld-springboot-java&metric=coverage)](https://sonarcloud.io/dashboard?id=raeperd_realworld-springboot-java)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=raeperd_realworld-springboot-java&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=raeperd_realworld-springboot-java)
+[![Build](https://github.com/RogerMetzger/realworld-springboot-java/actions/workflows/build.yml/badge.svg)](https://github.com/RogerMetzger/realworld-springboot-java/actions/workflows/build.yml)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=swat-exercise&metric=ncloc)](https://sonarcloud.io/project/overview?id=swat-exercise)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=swat-exercise&metric=coverage)](https://sonarcloud.io/project/overview?id=swat-exercise)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=swat-exercise&metric=reliability_rating)](https://sonarcloud.io/project/overview?id=swat-exercise)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [ReadWorld.io](https://github.com/gothinkster/realworld) backend project using spring boot java using `spring-security`, `spring-data-jpa`
