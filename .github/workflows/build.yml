@@ -1,5 +1,10 @@
 name: Build
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   build:
@@ -31,16 +36,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew build sonarqube --info
-      - uses: actions/upload-artifact@v2
-        with:
-          path: build/libs/*.jar
-
-      - uses: docker/login-action@v1
-        with:
-          registry: ghcr.io/raeperd
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Get branch name
-        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr /# -)" >> $GITHUB_ENV
-      - name: Build container image
-        run: ./gradlew jib -Djib.to.tags=${{ env.BRANCH_NAME }}
